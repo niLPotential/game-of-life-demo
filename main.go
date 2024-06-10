@@ -10,5 +10,5 @@ func main() {
 
 	http.HandleFunc("/htmx", HtmxHandler)
 
-	log.Fatal(http.ListenAndServe("8080", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }

@@ -9,7 +9,11 @@
 </head>
 
 <body>
-  <div x-data></div>
+  <div x-data="{ size: 10 }">
+    <template x-for="id in size*size">
+      <div x-data="{ alive: true }" @click="alive = !alive" x-text="alive"></div>
+    </template>
+  </div>
 </body>
 
 </html>
